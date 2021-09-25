@@ -1,0 +1,83 @@
+.banner {
+    background: linear-gradient(rgba(67, 74, 84, 0.3), rgba(67, 74, 84, 0.3)),
+        url(../img/beaches/parallax-4-1.jpg) no-repeat center / cover;
+    height: unset;
+    color: #fff;
+}
+.banner__body-shop h1 {
+    font-size: 35px;
+}
+
+.shop__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shop__item {
+    width: calc(25% - 32px);
+    font-size: 16px;
+    position: relative;
+    margin-top: 20px;
+    color: #9a9a9a;
+    margin-top: 40px;
+}
+.shop__item.sale::after {
+    position: absolute;
+    content: "SALE!";
+    top: 16px;
+    padding: 8px;
+    color: #fff;
+    background-color: #1bbc9b;
+    font-size: 12px;
+    right: 16px;
+    letter-spacing: 1px;
+}
+.shop__img {
+    width: 100%;
+}
+.shop__name {
+    font-size: 22px;
+    color: #555;
+    margin-top: 10px;
+}
+.shop__rate span {
+    font-size: 22px;
+}
+.shop__price {
+    margin: 14px 0;
+    font-size: 18px;
+}
+.shop__btn {
+    padding: 10px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    color: #9a9a9a;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1260px) {
+    .banner__body-shop h1,
+    .shop__body {
+        padding: 50px;
+    }
+    .shop__body {
+        margin: 0;
+    }
+    .shop__price {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 910px) {
+    .shop__price {
+        font-size: 12px;
+    }
+    .shop__item {
+        width: calc(50% - 30px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .shop__item {
+        width: 100%;
+    }
+}

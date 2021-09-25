@@ -1,0 +1,119 @@
+.banner {
+    background: linear-gradient(rgba(67, 74, 84, 0.3), rgba(67, 74, 84, 0.3)),
+        url(../img/contact/parallax-2-1.jpg) no-repeat center / cover;
+    height: unset;
+    color: #fff;
+}
+.banner__body-contact h1 {
+    font-size: 35px;
+}
+
+.contact__body {
+    display: flex;
+    justify-content: space-between;
+}
+.contact__col {
+    font-size: 14px;
+    color: #9a9a9a;
+    width: calc(50% - 20px);
+}
+.contact__title {
+    font-size: 26px;
+    color: #555;
+    font-weight: bold;
+}
+.contact__text {
+    margin-top: 16px;
+    line-height: 26px;
+}
+.contact__form {
+    margin-top: 20px;
+}
+.contact__input-group {
+    margin-top: 22px;
+}
+.contact__input-group label {
+    display: block;
+}
+.contact__input {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 40px;
+    margin-top: 10px;
+    outline: none;
+}
+.contact__btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #14b9d5;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.contact__info {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.contact__row {
+    display: flex;
+    justify-content: space-between;
+    width: calc(50% - 20px);
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+}
+.contact__left {
+    text-align: left;
+}
+.contact__right {
+    text-align: right;
+}
+.contact__time {
+    padding: 0 20px;
+    font-size: 20px;
+}
+.contact__phone {
+    padding: 0 20px;
+    font-size: 60px;
+    color: #000;
+    margin-top: 12px;
+}
+@media screen and (max-width: 1260px) {
+    .contact__body {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    .contact__col {
+        width: 100%;
+    }
+    .contact__info {
+        flex-direction: column;
+    }
+    .contact__row {
+        width: 100%;
+    }
+    .contact__col + .contact__col {
+        margin-top: 40px;
+    }
+    .contact__btn {
+        width: 100%;
+    }
+    .banner__body-contact h1 {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact__time {
+        font-size: 16px;
+    }
+    .contact__phone {
+        font-size: 30px;
+    }
+}

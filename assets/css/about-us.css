@@ -1,0 +1,270 @@
+.banner {
+    background: linear-gradient(rgba(67, 74, 84, 0.3), rgba(67, 74, 84, 0.3)),
+        url(../img/about-us/parallax-3-1.jpg) no-repeat center / cover;
+    height: unset;
+    color: #fff;
+}
+.banner__body__about-us h1 {
+    font-size: 35px;
+}
+.about-us__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us__hello {
+    width: calc(50% - 26px);
+    font-size: 40px;
+    line-height: 58px;
+    color: #555;
+    text-align: end;
+}
+.about-us__text {
+    width: calc(50% - 26px);
+    display: flex;
+    justify-content: space-between;
+    color: #9a9a9a;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.about-us__text p {
+    width: calc(50% - 12px);
+    margin-top: 16px;
+    line-height: 30px;
+}
+.about-us__img {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.about-us__img img {
+    display: block;
+    width: 100%;
+}
+/* about-us__banner */
+
+.about-us__banner {
+    background: linear-gradient(rgba(67, 74, 84, 0.3), rgba(67, 74, 84, 0.3)),
+        url(../img/about-us/cau.jpg) no-repeat center / cover;
+    height: 70vh;
+    position: relative;
+}
+.about-us__banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+}
+.about-us__banner-text h3 {
+    font-size: 60px;
+    margin-bottom: 26px;
+}
+.about-us__banner-text p {
+    letter-spacing: 5px;
+    font-size: 14px;
+    line-height: 26px;
+}
+.about-us__btn {
+    padding: 14px 24px;
+    margin-top: 26px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #f3a46b;
+    font-size: 18px;
+    border: none;
+}
+
+/* staff */
+.about-us__staff-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -70px;
+    position: relative;
+}
+.about-us__staff-item {
+    text-align: center;
+    width: calc(25% - 20px);
+    color: #9a9a9a;
+}
+.about-us__staff__img {
+    width: 100%;
+}
+.about-us__staff__name {
+    color: #555;
+    font-weight: bold;
+    margin-top: 14px;
+    font-size: 26px;
+}
+.about-us__staff__role {
+    margin-top: 6px;
+    letter-spacing: 2px;
+}
+
+.about-us__staff__desc {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 22px;
+}
+.about-us__staff__btn {
+    color: #9a9a9a;
+    margin-top: 14px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+.table-price__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.table-price__item {
+    margin-top: 20px;
+    width: calc(50% - 20px);
+}
+.table-price__item h3 {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.table-price__item p {
+    display: flex;
+    justify-content: space-between;
+    color: #9a9a9a;
+    margin-top: 8px;
+    align-items: center;
+}
+.table-price__tag {
+    font-size: 14px;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 24px;
+}
+
+/*  */
+.about-us__data {
+    background: linear-gradient(rgba(67, 74, 84, 0.3), rgba(67, 74, 84, 0.3)),
+        url(../img/about-us/thongke.jpg) no-repeat top / cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us__data-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.about-us__data-item {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+.about-us__data-number {
+    font-size: 50px;
+    margin-bottom: 14px;
+}
+.about-us__data-type {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1260px) {
+    .banner__body__about-us {
+        padding-left: 50px;
+    }
+    .about-us__body {
+        padding: 0 50px;
+    }
+    .about-us__desc {
+        text-align: center;
+        flex-direction: column;
+    }
+    .about-us__hello {
+        width: 100%;
+        text-align: center;
+    }
+    .about-us__text {
+        width: 100%;
+        flex-direction: column;
+    }
+    .about-us__text p {
+        width: 100%;
+    }
+    .about-us__banner {
+        display: flex;
+        justify-content: center;
+    }
+    .about-us__banner-text {
+        left: unset;
+    }
+
+    .about-us__staff-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us__staff-item {
+        width: 85%;
+    }
+    .about-us__staff-item + .about-us__staff-item {
+        margin-top: 60px;
+    }
+    .table-price__body {
+        flex-direction: column;
+    }
+    .table-price__item {
+        width: 100%;
+    }
+    .about-us__data {
+        height: 60vh;
+    }
+    .about-us__data-list {
+        flex-direction: column;
+    }
+    .about-us__data-item + .about-us__data-item {
+        margin-top: 22px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner__body__about-us {
+        padding-left: 20px;
+    }
+    .about-us__body {
+        padding: 0 20px;
+    }
+    .about-us__banner-text h3 {
+        font-size: 46px;
+        margin-bottom: 26px;
+    }
+    .about-us__staff-list {
+        padding-bottom: 20px;
+    }
+    .about-us__hello {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about-us__text {
+        font-size: 14px;
+    }
+    .about-us__text p {
+        line-height: 24px;
+    }
+    .about-us__banner-text p {
+        letter-spacing: 4px;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0 18px;
+    }
+    .about-us__banner {
+        height: 100vh;
+    }
+    .about-us__data {
+        height: 100vh;
+    }
+}
